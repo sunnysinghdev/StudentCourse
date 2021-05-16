@@ -1,0 +1,20 @@
+<h3>Student Course Registration</h3>
+ 
+<label>Student</label>
+<select id="Id11"  [(ngModel)]="studentId" 
+    (change)="selectStudent($event);">
+    <!-- <option selected="" value=""></option> -->
+    <option [ngValue]="k.Id" *ngFor="let k of students">
+        {{k.firstName +" "+ k.lastName}}
+    </option>
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<label>Course</label>
+<select id="Id22" [(ngModel)]="courseId" 
+    (change)="selectCourse($event);">
+    <!-- <option selected="" value=""></option> -->
+    <option [ngValue]="k.Id" *ngFor="let k of courses">
+        {{k.name}}
+    </option>
+</select>&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" (click)="addCourse()"> Add</button>

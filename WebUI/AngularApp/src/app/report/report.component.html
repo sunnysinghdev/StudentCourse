@@ -1,0 +1,18 @@
+<h3>Report</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Student Name</th>
+            <th>Course Name</th>
+
+        </tr>
+       
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of dataItem">
+            <td>{{data.studentName}}</td>
+            <td>{{data.courseName}}</td>
+        </tr>
+    </tbody>
+</table>
