@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  apiEndpoint: "http://localhost:56639/"
+  apiEndpoint: "https://studentcourse.azurewebsites.net/"
+  //apiEndpoint: "http://localhost:56639/"
 };
 
 /*

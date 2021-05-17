@@ -17,7 +17,9 @@ export class StudentDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.http.get(environment.apiEndpoint + "Student").subscribe((res:any)=>{
       res.forEach((element: any) => {
-        element.dob = element.dob.split("T")[0]
+        try{
+        element.dob = element.dob.split("T")[0];
+        }catch{}
       });
       this.dataItem = res;
     });
