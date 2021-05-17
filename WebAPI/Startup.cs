@@ -36,7 +36,7 @@ namespace WebAPI
                 options.AddDefaultPolicy(
                     builder =>
                     {
-                        builder.WithOrigins("http://localhost:4200", "http://localhost:52203/").AllowAnyHeader().AllowAnyMethod();
+                         builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
                     });
             });
             services.AddControllers();
